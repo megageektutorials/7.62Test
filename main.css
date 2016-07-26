@@ -1,0 +1,126 @@
+/* styles the whole site */
+body {
+	background-color:white;	
+	font-family: "arial", sans-serif;
+	padding: 0em 4em 0em 4em; /*top, right, bottom, left */
+}
+
+/* The logo and name of site, along with buying link, all in a div to center it */	
+.header{ 
+    display:table;
+    padding: .9em; 
+    max-width: 700px;
+    max-height: 200px;
+    margin:0 auto;
+}
+
+/* ".logo" contains the link & image and is a div*/
+.logo{
+    vertical-align: middle;
+    display: table-cell;
+    width: auto; 
+    min-width: 50px;
+    min-height: 50px;
+}
+
+/* ".headerText" contains all the text in the header at the top*/
+.headerText{ 
+    display:table-cell;
+    text-align:center;
+    padding-left: 30px;
+}
+
+/*7.62x54r.net in bold*/
+#siteName {
+	font-weight: bold;
+	font-size: 4em;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*A mosin Nagant Reference*/
+#subName {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#rackSale {
+	font-size: 1.7em;
+	padding: 0px;
+	margin: 0px;
+	text-decoration: underline;
+	text-decoration-color: #2196f3 ;
+}
+
+/*make divider thicker*/
+#topHr {
+	border: solid black 1px;
+}
+
+/*bold all categorie titles*/
+dl > dt {
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: .15em;
+}
+
+dd > a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+dd {
+	line-height: 1.7em;
+	text-decoration: none;
+}
+
+.ad {
+	text-align: center;
+}
+
+footer {
+	border-style: none !important;
+}
+
+@media (max-width:786px) {
+
+	body {
+		background-color: white;
+		font-family: "arial", sans-serift;
+		padding: 0em .5em 0em .5em;
+	}
+
+	.headerText{ 
+    	display:block;
+    	text-align:center;
+		padding-left: 0px;
+	}
+
+	#siteName {
+		font-weight: bold;
+		font-size: 1em;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#subName {
+		font-weight: normal;
+		font-size: 1em;
+	}
+
+	#rackSale {
+		font-size: 1em;
+		padding: 0px;
+		margin: 0px;
+		text-decoration: underline;
+		text-decoration-color: #2196f3;		
+	}
+	.header{ 
+	    display:table;
+	    padding-top: .5em; 
+		text-align: center;
+	    height: auto;
+	    margin:0 auto;
+	}
+	.logo{display: none;}
+}
